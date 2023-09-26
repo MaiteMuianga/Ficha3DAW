@@ -1,0 +1,56 @@
+
+
+/* Estilize o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Estilize o contêiner principal */
+  div {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Estilize o título */
+  h1 {
+    color: #333;
+  }
+  
+  /* Estilize os campos de entrada */
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  /* Estilize o botão de login */
+  button {
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Estilize as mensagens de perfil e erro */
+  p {
+    font-weight: bold;
+    color: #0077cc;
+    margin: 10px 0;
+  }
+  

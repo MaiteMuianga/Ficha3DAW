@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import './App.css';
 //import HellWord from './componets/HellWord';
-import ExibirNomeIdade from './componets/ExibirNomeIdade';
+//import ExibirNomeIdade from './componets/ExibirNomeIdade';
 import Contador from './componets/Contador';
 import ListaTarefas from './componets/ListaTarefas';
 import CicloVida from './componets/CicloVida';
@@ -16,6 +16,9 @@ import Inicio from './componets/pages/Inicio';
 import Servico from './componets/pages/Servico';
 import Container from './componets/layout/Container';
 import Footer from './componets/layout/Footer';
+import Login from './componets/pages/Login';
+import PainelUsuario from './componets/PainelUsuario';
+import PainelAdimin from './componets/pages/PainelAdmin';
 
 
 function App() {
@@ -31,6 +34,10 @@ function App() {
  //<Header />
 
   // Suponhamos que eu tenha uma variável de estado para controlar se o usuário está logado ou não.
+  //<Route path='/servicos' element={<Servico/>} />
+   //<Route exact path='/inicio' element={<Inivio/>} />
+  //<Route path='/contacto' element={<Contacto/>} />
+  //<Route path='/acerca' element={<Acerca/>} />
   const [usuarioLogado, setUsuarioLogado] = useState(false);
   return (
 
@@ -42,10 +49,12 @@ function App() {
     
     <Routes>
    
-      <Route exact path='/' element={<Inicio/>} />
-      <Route path='/servicos' element={<Servico/>} />
-      <Route path='/contacto' element={<Contacto/>} />
-      <Route path='/acerca' element={<Acerca/>} />
+      <Route exact path='/' element={<Login/>} />
+      <Route path='/usuario' element={ <PainelUsuario />} />
+      <Route path='/admin' element={ <PainelAdimin />} />
+         
+        
+     
       
       </Routes>
       </Container>
